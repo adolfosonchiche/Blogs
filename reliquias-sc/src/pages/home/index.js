@@ -20,8 +20,7 @@ const inicio = () => {
 			</Col>
 
 			<br />
-			<br />
-			<Container>
+			<Container style={{ backgroundColor:'#78bfdf', opacity:'0.6' }}>
 				<CardBody>
 					<CardText>{content}</CardText>
 					<CardTitle tag="h5">{title}</CardTitle>
