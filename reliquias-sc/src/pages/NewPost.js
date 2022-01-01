@@ -2,6 +2,7 @@
 
 //importamos hooks useState y hooks useEfffects para los estados
 import React, {useState, useEffect} from "react"
+import moment from "moment";
 //importamos firebase
 import firebase from "../lib/firebase"
 
@@ -35,12 +36,14 @@ function NewPost() {
         setPostCategory(category)
     }
 
-    //metodo para el boton guardar
+    //metodo para el boton guardar datos del post
     const savePost = () => {
         const database = firebase.database()
         const postRef = database.ref("/post")
-        let postObject = {postTitle, postContent, postCategory}
+        let postObject = {postTitle, postContent, postCategory,
+             createDate : moment().format("DD/MM/YY - hh:mm")}
         console.log(postObject)
+        setPostTitle("")
 
         postRef.push( postObject )
     }
@@ -83,7 +86,7 @@ function NewPost() {
 								<option>Educacion</option>
 							</Input>
 						</FormGroup>
-                        <Button color="primary" type="button" onClick= {savePost}>Guardar post</Button>
+                        <Button color="primary" type="submint" onClick= {savePost}>Guardar post</Button>
 					</Form>
 				</Col>
 			</Row>
