@@ -1,33 +1,38 @@
-import { Row, Col, Card, Container, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
-import { ImageBackground, Text } from 'react-native';
+import { Col, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Text } from 'react-native';
 
-import Img from '../../resource/inicio.jpg';
+
+
 import IconFace from '../../resource/facebook.png';
 import IconTwitter from '../../resource/twitter.png';
 import IconGit from '../../resource/git.png';
 
 const inicio = () => {
-	const title = 'Hector Adolfo Son Chiché';
-	const content = 'Bienvenido a la pagina web de';
+	const title = ' Adolfo Son Chiché';
+	const content = 'Bienvenido al sitio web de';
+	let urlFacebook = 'https://www.facebook.com/Ad.395'
+	let urlTwitter = 'https://twitter.com/sc_ado'
+	let urlGit = 'https://github.com/adolfosonchiche'
+
+
 
 	return (
 		<Col xs="12">
-			<Col>		
-			<Text>contacto:</Text>
-				<img top width="4%" height="" src={IconFace} alt="facebook" />
-				<img top width="4%" height="" src={IconTwitter} alt="facebook" />
-				<img top width="5%" height="" src={IconGit} alt="facebook" />
+			<Col>
+				<Text>contacto:</Text>
+				<a href={urlFacebook}><img  top width="5%" height="" src={IconFace} alt="facebook" /></a>
+				<a href={urlTwitter}><img top width="5%" height="" src={IconTwitter} alt="facebook" /></a>
+				<a href={urlGit}><img top width="6%" height="" src={IconGit} alt="facebook" /></a>
 			</Col>
 
 			<br />
-			<Container style={{ backgroundColor:'#78bfdf', opacity:'0.6' }}>
+			<Col style={{ backgroundColor: '#78bfdf', opacity: '0.6' }}>
 				<CardBody>
 					<CardText>{content}</CardText>
 					<CardTitle tag="h5">{title}</CardTitle>
 				</CardBody>
-			</Container>
-			
 			</Col>
+		</Col>
 	);
 };
 
