@@ -11,7 +11,7 @@ const inicio = () => {
 	const content = 'Bienvenido a la pagina web de';
 
 	return (
-		<div>
+		<Col xs="12">
 			<Col>		
 			<Text>contacto:</Text>
 				<img top width="4%" height="" src={IconFace} alt="facebook" />
@@ -26,7 +26,8 @@ const inicio = () => {
 					<CardTitle tag="h5">{title}</CardTitle>
 				</CardBody>
 			</Container>
-		</div>
+			
+			</Col>
 	);
 };
 
