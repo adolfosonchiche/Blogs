@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -12,7 +12,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -41,7 +41,7 @@
 .body {
   margin: 0;
   padding:0;
-  background-image: url(/src/resource/inicio.jpg);
+  /* background-image: url(/src/resource/home.jpg); */
   background-color: #202643;
   background-position: center center;
   background-repeat: no-repeat;
