@@ -6,8 +6,9 @@ import IconFace from '../../resource/facebook.png';
 import IconTwitter from '../../resource/twitter.png';
 import IconGit from '../../resource/git.png';
 import IconNerwork from '../../resource/network.png'
-import IconLocal from '../../resource/local.png'
+import IconLocal from '../../resource/linux.png'
 import IconServer from '../../resource/server.png'
+import LogoUsac from '../../resource/logo_usac.png'
 
 const inicio = () => {
 	const title = ' Adolfo Son Chiché';
@@ -29,7 +30,7 @@ const inicio = () => {
 			</Col>
 
 			<br />
-			<Col style={{ backgroundColor: '#78bfdf', opacity: '0.8' }}>
+			<Col style={{ backgroundColor: '#51e9a9', opacity: '0.8' }}>
 				<CardBody>
 					<CardText>{content}</CardText>
 					<CardTitle tag="h4">{title}</CardTitle>
@@ -40,6 +41,7 @@ const inicio = () => {
 				<CardBody>
 					<CardTitle tag="h6">{description}</CardTitle>
 					<CardText>{desU}</CardText>
+					<img  top width="10%" height="" src={LogoUsac} alt="" />
 				</CardBody>
 				<Col>
 				<img  top width="5%" height="" src={IconServer} alt="" />

@@ -50,7 +50,7 @@ function App() {
 				</Navbar>
 				<Routes>
 				<Route exact path="/" element={<Home />} />
-					<Route exact path="/crear" element={<Create />} />
+					<Route exact path="/my" element={<NewPost />} />
 					<Route path="/posts" element={<PostList />} />
 				</Routes>
 			</Router>

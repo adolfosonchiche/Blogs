@@ -7,7 +7,7 @@ export default {
         },
         {
             label: "acerca de mi",
-            path: "/crear"
+            path: "/my"
         },
         {
             label:"mis proyectos",
