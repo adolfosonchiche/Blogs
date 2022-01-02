@@ -22,21 +22,21 @@ const inicio = () => {
 
 	return (
 		<Col xs="12">
-			<Container>
+			<Col>
 				<a href={urlFacebook}><img  top width="5%" height="" src={IconFace} alt="facebook" /></a>
 				<a href={urlTwitter}><img top width="5%" height="" src={IconTwitter} alt="facebook" /></a>
 				<a href={urlGit}><img top width="6%" height="" src={IconGit} alt="facebook" /></a>
-			</Container>
+			</Col>
 
 			<br />
-			<Container style={{ backgroundColor: '#78bfdf', opacity: '0.6' }}>
+			<Col style={{ backgroundColor: '#78bfdf', opacity: '0.8' }}>
 				<CardBody>
 					<CardText>{content}</CardText>
 					<CardTitle tag="h4">{title}</CardTitle>
 				</CardBody>
-			</Container>
+			</Col>
 			<br/>
-			<Container style={{ backgroundColor: '#51e9a9', opacity: '0.6' }}>
+			<Col  style={{ backgroundColor: '#51e9a9', opacity: '0.8' }}>
 				<CardBody>
 					<CardTitle tag="h6">{description}</CardTitle>
 					<CardText>{desU}</CardText>
@@ -47,7 +47,7 @@ const inicio = () => {
 				<img  top width="5%" height="" src={IconNerwork} alt="" />
 				<br/>
 				</Col>
-			</Container>
+			</Col>
 		</Col>
 	);
 };
