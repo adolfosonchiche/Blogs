@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 //piezas para el navbar
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import routes from './route/routes';
-import Create from './pages/create';
+import Cv from './pages/cv/index';
 
 function App() {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -50,7 +50,7 @@ function App() {
 				</Navbar>
 				<Routes>
 				<Route exact path="/" element={<Home />} />
-					<Route exact path="/my" element={<NewPost />} />
+					<Route exact path="/my" element={<Cv />} />
 					<Route path="/posts" element={<PostList />} />
 				</Routes>
 			</Router>
