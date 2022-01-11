@@ -13,6 +13,8 @@ const cv = () => {
 	const desU = 'USAC';
 	const urlFacebook = 'https://www.facebook.com/Ad.395';
 
+	
+
 	return (
 		<div xs="12">
             <br/>
